@@ -1,0 +1,31 @@
+<br><br>
+    <div class="topdiv">
+        <div *ngFor="let data of countryData">
+            <h1>{{data.name}} </h1>
+            <img src="{{data.flag}}" style="width: 250px; height: 100px; float: right;"></div>
+        <!-- <div *ngFor="let data of countryData"><br> -->
+          
+          <!-- <h4>  Area : {{data.area}} </h4>
+          <h4>  Capital : {{data.capital}} </h4>
+          <h4>  Region : {{data.region}} </h4>
+          <h4>  Sub region : {{data.subregion}} </h4>
+          <h4>  Population : {{data.population}} </h4>
+          <h4>  cioc : {{data.cioc}} </h4> -->
+          <table *ngFor="let data of countryData">
+              <tr><td style="font-size: 20px; color: #5f9ebf">Area</td><td>{{data.area}}</td></tr>
+              <tr><td style="font-size: 20px; color: #5f9ebf">Capital</td><td>{{data.capital}}</td></tr>
+              <tr><td style="font-size: 20px; color: #5f9ebf">Region</td><td>{{data.region}}</td></tr>
+              <tr><td style="font-size: 20px; color: #5f9ebf">Sub region</td><td>{{data.subregion}}</td></tr>
+              <tr><td style="font-size: 20px; color: #5f9ebf">Population</td><td>{{data.population}}</td></tr>
+              <tr><td style="font-size: 20px; color: #5f9ebf">Cioc</td><td>{{data.cioc}}</td></tr>
+              <tr><td style="font-size: 20px; color: #5f9ebf">Alpha2code</td><td>{{data.alpha2Code}}</td></tr>
+              <tr><td style="font-size: 20px; color: #5f9ebf">Alpha3code</td><td>{{data.alpha3Code}}</td></tr>
+              <tr><td style="font-size: 20px; color: #5f9ebf">Callingcodes</td><td>{{data.callingCodes}}</td></tr>
+              <tr><td style="font-size: 20px; color: #5f9ebf">Native name</td><td>{{data.nativeName}}</td></tr>
+              <tr><td style="font-size: 20px; color: #5f9ebf">Numeric code</td><td>{{data.numericCode}}</td></tr>
+              <tr><td style="font-size: 20px; color: #5f9ebf">Demonym</td><td>{{data.demonym}}</td></tr>
+              <tr><td style="font-size: 20px; color: #5f9ebf">Altspellings</td><td>{{data.altSpellings}}</td></tr>
+
+          </table><br>
+         <!-- </div> -->
+    </div>

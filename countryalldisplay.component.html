@@ -1,0 +1,10 @@
+<br><br>
+
+<div class="flex-container">
+    <div  *ngFor="let data of rowData"><a routerLink="country-display/{{data.name}}" style="text-decoration: none;"><img class="image-name" src="{{data.flag}}" width="70px" height="30px"/>
+        </a>
+    <a class="image-name" routerLink="country-display/{{data.name}}" style="text-decoration: none;">{{data.name}}</a></div>
+   
+  </div>
+
+

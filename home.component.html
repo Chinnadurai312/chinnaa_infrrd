@@ -1,0 +1,18 @@
+<div class="header">
+    <h2> Country Information</h2>
+</div>
+
+<br><br>
+
+<ng-select bindLabel="name"
+                placeholder="Select country"
+                appendTo="body"
+                multiple="true"
+                [searchable]="true" 
+                [clearable]="true"
+                (change)="call($event)" style="float: right;">
+                <ng-option *ngFor="let data of rowData" [value]="data.name">
+                    <img src="{{data.flag}}" width="20px" height="20px"/>
+                    {{data.name}}
+                </ng-option>
+</ng-select>
